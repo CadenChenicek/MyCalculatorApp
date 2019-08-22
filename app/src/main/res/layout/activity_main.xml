@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85DCB0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Basic Calculator"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/num1EditText"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Num1"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <EditText
+        android:id="@+id/num2EditText"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Num2"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="add"
+        android:text="ADD"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/subtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="subt"
+        android:text="SUBT"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/ansTextView"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Answer: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+
+</LinearLayout>
